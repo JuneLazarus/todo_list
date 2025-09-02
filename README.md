@@ -1,1 +1,2 @@
-# Created for better arrange your day.
+# A noob programm's first webpage.
+# Created to better arrange your day.
