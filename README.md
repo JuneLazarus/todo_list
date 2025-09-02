@@ -1,2 +1,2 @@
-# A noob programm's first webpage.
+# A noob programmer's first webpage.
 # Created to better arrange your day.
