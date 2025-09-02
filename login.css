@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 10px;
+}
+html::before{
+    content: "";
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to right,rgba(44,114,251,1), rgb(226, 109, 255),rgb(255, 83, 140))no-repeat;
+    z-index: -1;
+}
+::selection{
+    color:#fff;
+    background:rgb(255, 13, 13);
+}
+.box{
+    display: flex;
+    overflow: hidden;
+    width: 90rem;
+    height: 55rem;
+    background-color:rgba(255,255,255,60%) ;
+    border-radius: 1.5rem;
+    margin: 10% auto;
+    box-shadow: 0 0 1rem 0.2rem rgb(0,0,0,10%);
+}
+.box .left{
+    position: relative;
+    width: 35%;
+    height: 100%;
+    background-color: skyblue;
+    opacity: 0.6;
+}
+.box .left::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image:url(https://n.sinaimg.cn/spider20221107/107/w683h1024/20221107/8b05-e3f1ae54de23085a471097f60c4b2831.jpg);
+    background-size:cover;
+    opacity: 0.9;
+}
+.box .right{
+    display: flex;
+    width:65%;
+    height:100%;
+    flex-direction: column;
+    align-items: center;
+}
+.box .right h4{
+    color:rgb(243, 53, 110);
+    font-size: 3rem;
+    margin-top: 5rem;
+}
+.box .right form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box .right form .acc{
+    outline: none;
+    width: 80%;
+    height: 5rem;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+    padding: 1rem 0 0 1.6rem;
+    border:none;
+    border-bottom: 1px solid rgb(255, 13, 13);
+    color:rgb(0,0,0);
+    background-color: rgba(0,0,0,0);   
+}
+.right form .acc:focus{
+    outline: none;
+    color:rgb(0,0,0);
+    padding:1rem 0 0 1.6rem;
+}
+.right .submit{
+    width: 60%;
+    height:5rem;
+    color:white;
+    background-image:linear-gradient(120deg,rgba(44,114,251,1) 0%, rgb(226, 109, 255),rgb(255, 83, 140) 100%);
+    font-size:1.4rem;
+    border:none;
+    border-radius: 0.5rem;
+    margin: 6rem 0 0 50%;
+    transform: translateX(-50%);
+}
+.right .submit:hover{
+    box-shadow: 0 0 2rem -0.5rem rgb(0,0,0/15%);
+}
+.right .fn{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 70%;
+}
+.right .fn a{
+    text-decoration: none;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    color:#666;
+    font-size: 1.3rem;
+}
+.right .fn a:hover{
+    color:rgb(255, 13, 13);
+}
